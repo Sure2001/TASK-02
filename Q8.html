@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+</head>
+<body>
+    <script>
+        function checkPalindrome(string){
+            const arrayValues = string.split('');// split the string
+            const reversArrayValues = arrayValues.reverse(); // reverse the string
+            const reversString = reversArrayValues.join(''); // join the reverse string
+
+            if(string == reversString){
+                console.log('It is a Palindrome');}
+            else{
+                console.log('It is Not Palindrome');
+            }
+        }
+        // input usage
+        const string="arun";
+        checkPalindrome(string);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q12</title>
+</head>
+<body>
+    <script>
+        function checkCharacter(char) {
+            char = char.toLowerCase();
+            if ('aeiou'.includes(char)) {
+                return char + " is a vowel.";
+            } else if (char >= 'a' && char <= 'z') { 
+                return char + " is a consonant.";
+            } else {
+                return "Invalid input. Please enter a letter.";
+            }
+        }
+        // Example usage
+        let character = "e";
+        let result = checkCharacter(character);
+        console.log(result);
+        </script>
+</body>
+</html>

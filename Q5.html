@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getDayOfWeek(weekNumber) {
+        if (weekNumber === 1) {
+            console.log("Sunday");
+        } else if (weekNumber === 2) {
+            console.log("Monday");
+        } else if (weekNumber === 3) {
+            console.log("Tuesday");
+        } else if (weekNumber === 4) {
+            console.log("Wednesday");
+        } else if (weekNumber === 5) {
+            console.log("Thursday");
+        } else if (weekNumber === 6) {
+            console.log("Friday");
+        } else if (weekNumber === 7) {
+            console.log("Saturday");
+        } else {
+            console.log("Invalid week number. Please enter a number between 1 and 7.");
+        }
+    }
+    
+    // Example usage:
+    let weekNumber = 3; 
+    getDayOfWeek(weekNumber);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+</head>
+<body>
+    <script>
+function isLeapYear(year) {
+    // A year is a leap year if:
+    // 1. It is divisible by 4
+    // 2. But not divisible by 100, unless it is also divisible by 400
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+// Example usage
+if (isLeapYear(2000)) {
+    console.log(2024 + " is a leap year.");
+} else {
+    console.log(1900 + " is not a leap year.");
+}
+
+    </script>
+</body>
+</html>
